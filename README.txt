@@ -13,11 +13,9 @@ Requirements: Symphony 2.0
 
 2. Enable it by selecting the "Site Name" Extension, choose Enable from the with-selected menu, then click Apply.
 
-3. You can now edit the Configuration Settings file (/manifest/config.php) from within the Symphony administration interface.
+3. You can now edit the Site Name setting in the configuration file (/manifest/config.php) from within the Symphony administration interface.
 
 
 [USAGE]
 
-- A "Configuration" menu is added to the Symphony administration interface that provides an Overview page and an Edit page.
-
-- Edit only the setting values unless you want to add additional rows to the $settings array.
+- A "Site Name" field is added to the Symphony Preferences page that provides a means of modifying the Site Name setting in the configuration file.
