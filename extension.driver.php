@@ -5,14 +5,17 @@
 		public function about() {
 			return array(
 				'name'			=> 'Site Name',
-				'version'		=> '1.0',
-				'release-date'	=> '2009-01-02',
+				'version'		=> '1.1',
+				'release-date'	=> '2011-02-10',
 				'author'		=> array(
 					'name'			=> 'Stephen Bau',
 					'website'		=> 'http://www.domain7.com/',
 					'email'			=> 'stephen@domain7.com'
 				),
-				'description'	=> 'Symphony System Preference for modifying the site name'
+				'description'	=> 'Symphony System Preference for modifying the site name',
+				'compatibility' => array(
+					'2.2' => true
+				)
 	 		);
 		}
 
@@ -28,13 +31,7 @@
 					'page' => '/system/preferences/',
 					'delegate' => 'Save',
 					'callback' => '__SavePreferences'
-				),
-						
-				array(
-					'page' => '/backend/',
-					'delegate' => 'AppendPageAlert',
-					'callback' => '__AppendAlert'
-				),
+				)
 			);
 		}
 
@@ -45,17 +42,8 @@
 			$setting_name = 'sitename';
 			$setting_value = $settings['general']['sitename'];
 
-			$this->_Parent->Configuration->set($setting_name, $setting_value, $setting_group);
-			$this->_Parent->saveConfig();
-
-//			redirect(URL . '/symphony/system/preferences/?action=sitename-saved');
-
-		}
-		
-		public function __AppendAlert($context){
-			if($_REQUEST['action'] == 'sitename-saved'){
-				$this->_Parent->Page->pageAlert('The site name was updated successfully.', AdministrationPage::PAGE_ALERT_NOTICE);
-			}
+			Symphony::Configuration()->set($setting_name, $setting_value, $setting_group);
+			Administration::instance()->saveConfig();
 		}
 		
 		public function appendPreferences($context){
@@ -63,7 +51,7 @@
 			$group->setAttribute('class', 'settings');
 			$group->appendChild(new XMLElement('legend', 'Site Name'));			
 
-			$sitename = $this->_Parent->Configuration->get('sitename', 'general');
+			$sitename = Symphony::Configuration()->get('sitename', 'general');
 			$label = new XMLElement('label', 'Website Name');			
 			$label->appendChild(Widget::Input('settings[general][sitename]', $sitename, 'text'));
 			

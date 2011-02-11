@@ -1,10 +1,10 @@
 Site Name Extension
 ------------------------------------
 
-Version: 1.0
+Version: 1.1
 Author: Stephen Bau (stephen@domain7.com)
-Build Date: 2 January 2009
-Requirements: Symphony 2.0
+Build Date: 10 February 2011
+Requirements: Symphony 2.2
 
 
 [INSTALLATION]
