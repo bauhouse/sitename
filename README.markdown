@@ -1,8 +1,8 @@
 # Site Name Extension
 
-- Version: 1.1
+- Version: 1.2
 - Author: Stephen Bau (stephen@domain7.com)
-- Build Date: 11 February 2011
+- Build Date: 5 November 2011
 - Requirements: Symphony 2.2
 
 
@@ -19,6 +19,10 @@
 
 
 ## Change Log
+
+Version 1.2 - 5 November 2011
+
+- Handle special characters for the Site Name setting
 
 Version 1.1 - 10 February 2011
 

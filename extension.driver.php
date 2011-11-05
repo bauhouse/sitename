@@ -5,8 +5,8 @@
 		public function about() {
 			return array(
 				'name'			=> 'Site Name',
-				'version'		=> '1.1',
-				'release-date'	=> '2011-02-10',
+				'version'		=> '1.2',
+				'release-date'	=> '2011-11-05',
 				'author'		=> array(
 					'name'			=> 'Stephen Bau',
 					'website'		=> 'http://www.domain7.com/',
@@ -53,7 +53,7 @@
 
 			$sitename = Symphony::Configuration()->get('sitename', 'general');
 			$label = new XMLElement('label', __('Website Name'));			
-			$label->appendChild(Widget::Input('settings[general][sitename]', $sitename, 'text'));
+			$label->appendChild(Widget::Input('settings[general][sitename]', htmlspecialchars($sitename), 'text'));
 			
 			$group->appendChild($label);						
 			$context['wrapper']->appendChild($group);
