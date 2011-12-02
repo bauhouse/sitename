@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension id="sitename">
+	<name>Site Name</name>
+	<description>System Preference for modifying the site name</description>
+	<repo type="github">https://github.com/bauhouse/sitename</repo>
+	<url type="discuss">http://symphony-cms.com/discuss/thread/587/</url>
+	<types>
+		<type>Interface</type>
+	</types>
+	<authors>
+		<author>
+			<name github="bauhouse" symphony="bauhouse">Stephen Bau</name>
+			<website>http://domain7.com/</website>
+		</author>
+	</authors>
+	<releases>
+		<release version="1.2" date="2011-11-05" min="2.2" />
+	</releases>
+</extension>
