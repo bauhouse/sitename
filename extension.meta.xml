@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<extension id="sitename">
+<extension id="sitename"  xmlns="http://symphony-cms.com/schemas/extension/1.0">
 	<name>Site Name</name>
 	<description>System Preference for modifying the site name</description>
 	<repo type="github">https://github.com/bauhouse/sitename</repo>
