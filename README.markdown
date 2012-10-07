@@ -1,9 +1,9 @@
 # Site Name Extension
 
-- Version: 1.2
-- Author: Stephen Bau (stephen@domain7.com)
-- Build Date: 5 November 2011
-- Requirements: Symphony 2.2
+- Version: 1.3
+- Author: Stephen Bau
+- Build Date: 7 October 2012
+- Requirements: Symphony 2.3
 
 
 ## Installation

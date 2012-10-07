@@ -3,14 +3,14 @@
 	<name>Site Name</name>
 	<description>System Preference for modifying the site name</description>
 	<repo type="github">https://github.com/bauhouse/sitename</repo>
-	<url type="discuss">http://symphony-cms.com/discuss/thread/587/</url>
+	<url type="discuss">http://getsymphony.com/discuss/thread/587/</url>
 	<types>
 		<type>Interface</type>
 	</types>
 	<authors>
 		<author>
 			<name github="bauhouse" symphony="bauhouse">Stephen Bau</name>
-			<website>http://domain7.com/</website>
+			<website>http://stephenbau.com/</website>
 		</author>
 	</authors>
 	<releases>
