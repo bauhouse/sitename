@@ -20,6 +20,10 @@
 
 ## Change Log
 
+Version 1.3 - 7 October 2012
+
+- Update for Symphony 2.3 (Contributed by [Ross Cairns](http://getsymphony.com/get-involved/member/rc1/))
+
 Version 1.2 - 5 November 2011
 
 - Handle special characters for the Site Name setting
