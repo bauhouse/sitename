@@ -26,7 +26,7 @@
 			$setting_value = $settings['general']['sitename'];
 
 			Symphony::Configuration()->set($setting_name, $setting_value, $setting_group);
-			Administration::instance()->saveConfig();
+			Symphony::Configuration()->write();
 		}
 		
 		public function appendPreferences($context){
