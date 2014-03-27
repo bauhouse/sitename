@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<extension id="sitename"  xmlns="http://symphony-cms.com/schemas/extension/1.0">
+<extension id="sitename" status="released" xmlns="http://symphony-cms.com/schemas/extension/1.0">
 	<name>Site Name</name>
 	<description>System Preference for modifying the site name</description>
 	<repo type="github">https://github.com/bauhouse/sitename</repo>
@@ -14,6 +14,9 @@
 		</author>
 	</authors>
 	<releases>
+		<release version="1.4" date="2014-03-26" min="2.3.6">
+			- Update for Symphony 2.4
+		</release>
 		<release version="1.3" date="2012-10-07" min="2.3">
 			- Update for Symphony 2.3 (Contributed by [Ross Cairns](http://getsymphony.com/get-involved/member/rc1/))
 		</release>

@@ -1,9 +1,9 @@
 # Site Name Extension
 
-- Version: 1.3
+- Version: 1.4
 - Author: Stephen Bau
-- Build Date: 7 October 2012
-- Requirements: Symphony 2.3
+- Build Date: 26 March 2014
+- Requirements: Symphony 2.3.6
 
 
 ## Installation
@@ -19,6 +19,10 @@
 
 
 ## Change Log
+
+Version 1.4 - 26 March 2014
+
+- Update for Symphony 2.4
 
 Version 1.3 - 7 October 2012
 
