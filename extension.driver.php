@@ -2,23 +2,6 @@
 	
 	class extension_sitename extends Extension {
 
-		public function about() {
-			return array(
-				'name'			=> 'Site Name',
-				'version'		=> '1.2',
-				'release-date'	=> '2011-11-05',
-				'author'		=> array(
-					'name'			=> 'Stephen Bau',
-					'website'		=> 'http://www.domain7.com/',
-					'email'			=> 'stephen@domain7.com'
-				),
-				'description'	=> 'Symphony System Preference for modifying the site name',
-				'compatibility' => array(
-					'2.2' => true
-				)
-	 		);
-		}
-
 		public function getSubscribedDelegates(){
 			return array(
 				array(
